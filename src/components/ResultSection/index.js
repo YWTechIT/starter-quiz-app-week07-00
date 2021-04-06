@@ -24,11 +24,15 @@ const ResultTitle = styled.div`
 	text-align: center;
 `;
 
-const ResultSection = ({ cCode }) => (
+const ResultSection = ({ cCode }) => {
+return(
 	<>
 		<SectionTitle>당신은 혹시?</SectionTitle>
 		<StyledImage src={RESULT[cCode].src} />
 		<ResultTitle>{RESULT[cCode].title}</ResultTitle>
 	</>
-);
+
+)
+}
+
 export default ResultSection;
